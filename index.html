@@ -4,14 +4,38 @@
     </head>
     <body>
         <div id='choice-div'>
-            <button id='choice-one'>Choose A</button>
-            <button id='choice-two'>Choose B</button>
+            <div id='questionOne'>
+                <p>You walk into a dark cavern with no exits available. The only thing you can see are the two fruit ahead of you. Which one do you pick up?</p>
+                <button id='pineapples'>Pineapples</button>
+                <button id='bannanas'>Bannanas</button>
+            </div>
+            <br>
+            <div id='questionTwo'>
+                <!--..... are to even out the button spacing-->
+                <p>After picking upthe fruit a door opens from behind a large rock. You can't tell where it leads but are drawn by curiosity to go towards it. As you enter the door the fruit dissapears from your hand, but you don't actually remember holding it. What was the color of that weird fruit again?</p>
+                <button id='blue'>I think it was Blue?</button>
+                <button id='red'>I think it was Red?</button>
+            </div>
+            <br>
+            <!-- temporary buttons that need some text-->
+            <div id='questionThree'>
+                <button>sample text</button>
+                <button>sample text</button>
+            </div>
+            <br>
+            <div id='questionFour'>
+                <button>sample text</button>
+                <button>sample text</button>
+            </div>
         </div>
         <div id='answer-div'>
         </div>
     </br>
+        <button id='check-score'>Get Results</button>
         <button id='clear-choices'>Clear</button>
-        <button id='check-score'>Temporary Button</button>
+    </br>
+        <div id='results-div'>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>
