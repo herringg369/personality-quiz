@@ -6,6 +6,10 @@ const buttonOne = document.querySelector('#pineapples')
 const buttonTwo = document.querySelector('#bannanas')
 const buttonThree = document.querySelector('#blue')
 const buttonFour = document.querySelector('#red')
+const buttonFive = document.querySelector('#button5')
+const buttonSix = document.querySelector('#button6')
+const buttonSeven = document.querySelector('#button7')
+const buttonEight = document.querySelector('#button8')
 
 // do the same thing for the other sample buttons
 
@@ -19,11 +23,13 @@ function createAnswer (answer) {
     answerHere.appendChild(theAnswer)
 }
 
-//clears the page of answer chocies
+// Clears the page of answer chocies
 
 function removeAnswer () {
     answerHere.innerText = 'Choice Made...'
 }
+
+// Reloads the page
 
 clearChoices.addEventListener('click', function () {
     removeAnswer()
@@ -31,7 +37,7 @@ clearChoices.addEventListener('click', function () {
     location.reload()
 })
 
-// Score mechanic is not working, need to come up with another way to save choices
+// When a button is pressed: it is removed, the text is written in a seperate div, and the score is caculated
 
 buttonOne.addEventListener('click', function () {
     // remove answer needed so the answers don't stack
@@ -66,10 +72,58 @@ buttonFour.addEventListener('click', function () {
     choiceOne.removeChild(document.querySelector('#questionTwo'))
 })
 
+buttonFive.addEventListener('click', function () {
+    removeAnswer()
+    createAnswer('option A')
+    console.log('option A')
+    score += 1
+    choiceOne.removeChild(document.querySelector('#questionThree'))
+})
+
+buttonSix.addEventListener('click', function () {
+    removeAnswer()
+    createAnswer('option B')
+    console.log('option B')
+    score += 2
+    choiceOne.removeChild(document.querySelector('#questionThree'))
+})
+
+buttonSeven.addEventListener('click', function () {
+    removeAnswer()
+    createAnswer('option A')
+    console.log('option A')
+    score += 1
+    choiceOne.removeChild(document.querySelector('#questionFour'))
+})
+
+buttonEight.addEventListener('click', function () {
+    removeAnswer()
+    createAnswer('option B')
+    console.log('option B')
+    score += 2
+    choiceOne.removeChild(document.querySelector('#questionFour'))
+})
+
 document.querySelector('#check-score').addEventListener('click', function () {
     console.log(score)
     if (score == 0) {
         results.innerText='You have to play the game first'
+    } else if (score == 1) {
+
+    } else if (score == 2) {
+
+    } else if (score == 3) {
+
+    } else if (score == 4) {
+
+    } else if (score == 5) {
+
+    } else if (score == 6) {
+
+    } else if (score == 7) {
+
+    } else if (score == 8) {
+
     }
 })
 
