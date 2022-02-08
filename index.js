@@ -106,14 +106,8 @@ buttonEight.addEventListener('click', function () {
 
 document.querySelector('#check-score').addEventListener('click', function () {
     console.log(score)
-    if (score == 0) {
+    if (score <= 4) {
         results.innerText='You have to play the game first'
-    } else if (score == 1) {
-
-    } else if (score == 2) {
-
-    } else if (score == 3) {
-
     } else if (score == 4) {
 
     } else if (score == 5) {
