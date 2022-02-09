@@ -1,5 +1,5 @@
 body {
-    background-color: #90EE90;
+    background-color: black;
     justify-content: center;
     text-align: center;
 }
@@ -18,4 +18,9 @@ button {
     background-color: #CBC3E3;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+p {
+    color: white;
+    font-family: 'Press Start 2P';
 }
