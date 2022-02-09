@@ -7,6 +7,9 @@ body {
 #choice-div {
     justify-content: center;
     text-align: center;
+    width: 1000px;
+    margin-left: 250px;
+    margin-top: 50px;
 }
 
 #answer-div {
